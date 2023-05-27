@@ -6,7 +6,7 @@ const app = express();
 
 const api = require('./api');
 const { notFound, errorHandler } = require('./middlewares/errors.middleware');
-
+// hello
 if (process.env.NODE_ENV === 'production') {
 	app.use(express.static('client/public'));
 	app.get('*', (req, res) => {
